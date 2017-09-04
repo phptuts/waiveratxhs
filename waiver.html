@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+    <title>ATX Hackerspace Waiver</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <style>
+        canvas {
+            width: 100%;
+            display: block;
+            border: solid gray 1px;
+            height: 100px;
+        }
+        #signature-clear, #saveSignature {
+            float: right;
+            margin-top:10px;
+            margin-bottom: 20px;
+        }
+        #signature-clear {
+            margin-right: 10px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 18px;
+        }
+
+        .show-print {
+            display: none;
+        }
+
+        @media print
+        {
+            .no-print
+            {
+                display: none !important;
+            }
+            .show-print {
+                display: block
+            }
+            p {
+                font-size: 10px;
+            }
+            h2 {
+                font-size: 14px;
+            }
+            h1 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col">
+        <h1>WAIVER, RELEASE OF LIABILITY, AND ASSUMPTION OF RISK</h1>
+
+        <p>In consideration of the services of ATX Hackerspace, its users of workshop spaces, their agents, owners, officers, volunteers, participants, employees, and all other persons or entities acting in any capacity on their behalf (hereinafter collectively referred to as "ATX Hackerspace"), I hereby agree to release, indemnify, and discharge ATX Hackerspace of liability, on behalf of myself, my children, my parents, my heirs, assigns, personal representative and estate as described below with respect to ATX Hackerspace activities, including but not limited to ATX Hackerspace events, fundraising events, community outreach events, classes, practice and preparation for those classes and events, at any location including but not limited to any location where such event occurs or where equipment for those classes and/or events is placed or is in use.</p>
+
+        <p> 1. I acknowledge that my participation in an industrial workshop environment entails risks that are known, unknown, anticipated, and/or unanticipated that could result in physical or emotional injury, paralysis, death, or damage to myself, to property, or to third parties. I understand that such risks cannot be eliminated without jeopardizing the essential and/or fundamental qualities of the activity. I assume those risks and release ATX Hackerspace of liability resulting from those risks.  I understand and acknowledge that I am hereby relinquishing certain legal rights.</p>
+
+        <p>The risks include, amongst other things: major and minor bodily injury; electrocution; exposure to harmful substances such as but not limited to corrosive acids, poisonous chemicals and gases, strong alkaline materials; collision with objects; exposure to intense radiation from lasers, UV light, electromagnetic, radio and other sources; illness; exposure to extremes of temperature and humidity; electrical arcs; injury by sharp objects; wrist, arm, neck, shoulder, and/or back injuries; slips and falls; falls from a great height; heavy falling objects; and biologically hazardous organisms.</p>
+
+        <p>Furthermore, I understand that ATX Hackerspace seeks safety, but it is not infallible, it might be unaware of a participant's fitness or abilities, it might misjudge the conditions, the current state of mind of a participant, or status of the area, and that it may give inadequate warnings or instructions. I also understand that the equipment being used might malfunction. I expressly acknowledge, and promise to accept and assume all of these risks.</p>
+
+        <p> 2. I acknowledge, agree, and represent that I understand the nature of an industrial workshop space and that I am qualified, in good health, and in proper physical and mental condition to participate in such activity. I further agree and warrant that if at any time I believe conditions to be unsafe, I will immediately discontinue further participation in the activity.</p>
+
+        <p> 3. I expressly agree and promise to accept and assume all of the risks existing in this activity. My participation in this activity is purely voluntary, and I elect to participate in spite of the risks.</p>
+
+        <p> 4. This agreement applies to any negligence alleged against ATX Hackerspace: I hereby voluntarily release, forever discharge, and agree to indemnify and hold harmless ATX Hackerspace from any and all claims, demands, or causes of action, which are in any way connected with my participation in this activity or my use of ATX Hackerspace's equipment or facilities, including any claims which allege negligent acts or omissions by ATX Hackerspace.</p>
+
+        <p> 5. Should ATX Hackerspace or anyone acting on its behalf, be required to incur attorney's fees and costs to enforce this agreement, I agree to indemnify and hold ATX Hackerspace harmless for all such fees and costs.</p>
+
+
+
+        <p> 6. I certify that I have adequate insurance to cover any injury or damage I may cause or suffer while participating, or else I agree to bear the costs of such injury or damage myself. I further certify that I am willing to assume the risk of any medical, mental, or physical condition I may have.</p>
+
+        <p> 7. In the event that I file a lawsuit against ATX Hackerspace, I agree to do so solely in the state of Texas, and I further agree that the substantive law of that state shall apply in that action without regard to the conflict of law rules of that state. I agree that if any portion of this agreement is found to be void or unenforceable, the remaining portions shall remain in full force and effect.</p>
+
+        <p> By signing this document, I acknowledge that if anyone is hurt or property is damaged during my participation in this activity, I may be found by a court of law to have waived my right to maintain a lawsuit against ATX Hackerspace on the basis of any claim from which I have released them herein. I have had sufficient opportunity to read this entire document. I have read and understand it, and I agree to be bound by its terms.</p>
+    </div>
+    </div>
+
+    <div class="no-print">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name"  placeholder="Enter Full Name">
+        </div>
+        <div id="signature-pad">
+            <canvas width="100%" height="100px"  ></canvas>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <button class="btn btn-success pull-right" id="saveSignature" >Save</button>
+                <button id="signature-clear" class="btn btn-info">Clear Signature</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="show-print">
+        <h2>Name: ________________________________________</h2>
+        <h2>Date: ________________________________________</h2>
+        <h2>Signature: ________________________________________</h2>
+    </div>
+
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.0/dist/signature_pad.min.js"></script>
+
+<script>
+    var wrapper = document.getElementById("signature-pad");
+    var clearButton = document.querySelector("#signature-clear");
+    var savePNGButton = document.querySelector("#saveSignature");
+    var nameField = document.getElementById('name');
+    var canvas = wrapper.querySelector("canvas");
+    var signaturePad = new SignaturePad(canvas);
+
+    // Adjust canvas coordinate space taking into account pixel ratio,
+    // to make it look crisp on mobile devices.
+    // This also causes canvas to be cleared.
+    function resizeCanvas() {
+        // When zoomed out to less than 100%, for some very strange reason,
+        // some browsers report devicePixelRatio as less than 1
+        // and only part of the canvas is cleared then.
+        var ratio =  Math.max(window.devicePixelRatio || 1, 1);
+
+        // This part causes the canvas to be cleared
+        canvas.width = canvas.offsetWidth * ratio;
+        canvas.height = canvas.offsetHeight * ratio;
+        canvas.getContext("2d").scale(ratio, ratio);
+
+        // This library does not listen for canvas changes, so after the canvas is automatically
+        // cleared by the browser, SignaturePad#isEmpty might still return false, even though the
+        // canvas looks empty, because the internal data of this library wasn't cleared. To make sure
+        // that the state of this library is consistent with visual state of the canvas, you
+        // have to clear it manually.
+        signaturePad.clear();
+    }
+
+    window.onresize = resizeCanvas;
+    resizeCanvas();
+
+    clearButton.addEventListener("click", function (event) {
+        signaturePad.clear();
+    });
+
+    savePNGButton.addEventListener("click", function (event) {
+        if (signaturePad.isEmpty() || nameField.value == '') {
+            alert("Please provide signature & full name.");
+        } else {
+            var signatureData = {
+                'name': nameField.value,
+                'signature': signaturePad.toDataURL("image/png")
+            };
+
+            nameField.value = '';
+            signaturePad.clear();
+            console.log(JSON.stringify(signatureData));
+            console.log('signature-data');
+        }
+    });
+
+
+</script>
+</body>
+</html>
